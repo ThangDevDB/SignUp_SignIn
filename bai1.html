@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bai1.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Sign up</title>
+</head>
+
+<body>
+    <div class="sign_up">
+        <h2 class="signup_heading">Create Account</h2>
+        <p class="signup_already">
+            Already have an account ? <a href="./signin.html" class="signup_link">Sign In</a>
+        </p>
+        <form class="signup_form">
+            <div class="form_group">  
+                <input type="text" id="username" name="username" class="form_input" placeholder="UserName">
+            </div>
+            <div class="form_group">               
+                <input type="email" id="email" name="email" class="form_input" placeholder="Email">
+            </div>
+            <div class="form_group">                
+                <input type="password" id="password" name="password" class="form_input" placeholder="PassWord">
+            </div>
+            <div class="form_group">                
+                <input type="password" id="confirmpassword" name="confirmpassword" class="form_input" placeholder="Confirm Password">
+            </div>
+            <div class="form_group">
+                <button type="submit" id="btn_submit" class="form_submit">
+                    <span class="form_submit-text">Sign Up</span><i class="fa fa-long-arrow-right"></i>
+                </button>
+            </div>
+            <div class="text_or"><p>OR</p></div>
+            <div class="form_group">
+                <button type="submit" class="form_submit_google">
+                    <i class="fa-brands fa-google"></i> <span class="form_submit-text">Sign In With Google</span>
+                </button>
+            </div>
+            <div class="form_checkbox">
+                <input type="checkbox" name="" id="checkbox">
+                <label for="checkbox">
+                    I have read and agree to the <a href="#" class="signup_checkbox">Term of Service</a>
+                </label>
+            </div>
+        </form> 
+    </div>  
+    <script src="./bai1.js"></script>
+    <!-- <script src="./signin.js" type="module"></script> -->
+    <!-- <script src="./signin.js"></script>   -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
